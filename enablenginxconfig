@@ -1,0 +1,2 @@
+sudo ln -s /etc/nginx/sites-available/testing-management /etc/nginx/sites-enabled/
+sudo systemctl restart nginx

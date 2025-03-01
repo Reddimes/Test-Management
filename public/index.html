@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing Management</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Testing Management</h1>
+        <div id="login-register">
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button id="login">Login</button>
+            <button id="register">Register</button>
+        </div>
+        <div id="dashboard" style="display:none;">
+            <h2>Projects</h2>
+            <div id="projects"></div>
+            <button id="createProject">Create Project</button>
+            <button id="testProject">Test Entire Project</button>
+            <div id="testResults" style="margin-top: 20px;">
+                <h3>Test Results</h3>
+                <table id="resultsTable" border="1" cellpadding="10">
+                    <thead>
+                        <tr>
+                            <th>Test Name</th>
+                            <th>Status</th>
+                            <th>Result</th>
+                            <th>Timestamp</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Results will be populated here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
