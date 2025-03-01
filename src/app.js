@@ -2,10 +2,10 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const dotenv = require('dotenv');
-const authRoutes = require('./src/routes/authRoutes.js');
-const projectRoutes = require('./src/routes/projectRoutes.js');
-const testRoutes = require('./src/routes/testRoutes.js');
-const { scheduleTests } = require('./src/utils/scheduler.js');
+const authRoutes = require('./routes/authRoutes.js');
+const projectRoutes = require('./routes/projectRoutes.js');
+const testRoutes = require('./routes/testRoutes.js');
+const { scheduleTests } = require('./utils/scheduler.js');
 
 dotenv.config();
 
